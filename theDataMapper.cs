@@ -10,12 +10,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Deloitte.Tax.T990.Common;
-using Deloitte.Tax.T990.DAL.Interfaces;
-using Deloitte.Tax.T990.Model;
 using Microsoft.Practices.EnterpriseLibrary.Data;
 
-namespace Deloitte.Tax.T990.DAL
+namespace DAL
 {
     public class theDataMapper : IDataMapper
     {
@@ -378,7 +375,6 @@ namespace Deloitte.Tax.T990.DAL
                     if (command.Connection.State != ConnectionState.Closed)
                         command.Connection.Close();
                 }
-
             }
         }
 
